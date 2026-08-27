@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "android_adbkit"
+version = "1.0.0"
+description = "Automated ADB (Android Platform-Tools) downloader and manager."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "Christian (@pusheandoando)"}
+]
+dependencies = [
+    "requests>=2.28",
+    "tqdm>=4.64",
+]
+
+[project.urls]
+Homepage = "https://github.com/pusheandoando/android_adbkit"
+Repository = "https://github.com/pusheandoando/android_adbkit"
+
+[tool.setuptools.packages.find]
+where = ["."]
